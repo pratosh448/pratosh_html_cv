@@ -69,7 +69,7 @@ li{
 /* main */
 
 /** big title **/
-#title, h1, h2, h4{
+#title, h1, h2{
   text-transform: uppercase;
 }
 
@@ -79,6 +79,7 @@ li{
   margin-bottom: 3.24rem;
   line-height: 1.2;
 }
+
 
 #title h1{
   font-weight: 300;
@@ -92,9 +93,18 @@ li{
 }
 
 /**************************** Profile section CSS Opened*******************************/
-
+#profile, h4{
+	text-transform: uppercase;
+}
   
-#title h4{
+#profile{
+  position: relative;
+  left: 0rem;
+  margin-bottom: 3.24rem;
+  line-height: 1.2;
+}
+
+#profile h4{
   position: relative;
   /* XXX: 0.05625rem for aligning fx printing */
   left: 2.94rem;
@@ -103,18 +113,18 @@ li{
   color: #555;
 }
 
-#title h4 > i{
+#profile h4 > i{
   /* use absolute position to prevent icon's width from misaligning title */
   /* assigning a fixed width here is no better due to needing to align decorator
      line too */
   position: absolute;
-  left: var(--main-blocks-title-icon-offset-left);
+  left: 10px;
   z-index: 1; /* over decorator line */
   color: #444;
 }
 
 /**** minor tweaks on the icon fonts ****/
-#title h4 > .fa-user-tie{
+#profile h4 > .fa-user-tie{
   left: calc(var(--main-blocks-title-icon-offset-left) - 0.299992rem);
   top: 0.299992rem;
   color: blue;
